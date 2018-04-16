@@ -1,0 +1,44 @@
+<theme>
+	
+	<formatVersion>4</formatVersion>
+	<include>./../theme.xml</include>
+	
+	<view name="system">
+	
+	<image name="logo">
+    <path>./logo.png</path>
+	</image>
+	
+	<image name="brilho" extra="true">
+	<path>./gmbg.jpg</path>
+	<size>1 1</size>
+	<zIndex>30</zIndex>
+	</image>
+	
+	</view>
+	
+	<view name="basic, detailed, video">
+	
+	<image name="logo">
+    <path>./logo.png</path>
+	</image>
+	
+	<image name="brilho" extra="true">
+	<path>./gmbg2.jpg</path>
+	<size>1 1</size>
+	<zIndex>30</zIndex>
+	</image>
+	
+	</view>
+	
+	<view name="basic, detailed, grid, video">
+ <image name="logo">
+  <path>./logo.png</path>
+  <origin>.5 .5</origin>
+  <pos>.101 .17</pos>
+  <maxSize>.102 .067</maxSize>
+  <zIndex>98</zIndex>
+ </image>
+</view>
+
+</theme>

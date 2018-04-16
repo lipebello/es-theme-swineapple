@@ -1,0 +1,309 @@
+<!--
+theme name:     Screenshots
+version:        1.0
+author:         DRM
+email:          ryan@sb-films.com
+website:        
+license:        creative commons CC-BY-NC-SA
+Based on: 
+“Retrorama” by Filipe Bello who also helped A TON in getting this working
+“Flat” by Lilbud
+font: joy.ttf
+-->
+
+<theme>
+
+	<formatVersion>4</formatVersion>
+	
+<!-- vertical carousel system  *begin*-->
+<feature supported="carousel">
+
+		<view name="system">
+
+			<!-- Custom Vertical System View -->
+			<image name="console" extra="true">
+				<maxSize>0.500 0.700</maxSize>
+				<pos>0.655 0.465</pos>
+			</image>
+
+			<carousel name="systemcarousel">
+				<type>vertical</type>
+				<pos>0.010 0.020</pos>
+				<size>0.300 0.890</size>
+				<color>FFFFFF00</color>
+				<logoScale>1.8</logoScale>
+				<logoSize>0.125 0.160</logoSize>
+				<maxLogoCount>5</maxLogoCount>
+				<zIndex>90</zIndex>
+			</carousel>
+			
+			<text name="systemInfo">
+				<pos>-0.01 0.930</pos>
+				<size>0.980 0.050</size>
+				<backgroundColor>FFFFFF00</backgroundColor>
+				<color>232323</color>
+				<fontPath>./_art/menu.ttf</fontPath>
+				<fontSize>0.025</fontSize>
+				<alignment>right</alignment>
+			</text>
+
+   </view>
+</feature>
+<!-- vertical carousel system  *end*-->
+
+<view name="system">
+
+<image name="sysbg0" extra="true">
+	<color>ffffff</color>
+	<path>./_art/white.png</path>
+	<size>1 1</size>
+	<pos>0 0</pos>
+	<color>000000</color>
+	<zIndex>1</zIndex>
+</image>
+
+<image name="sysbg1" extra="true">
+	<color>ffffff</color>
+	<path>./_art/sysbg1.png</path>
+	<size>1 1</size>
+	<pos>0 0</pos>
+	<zIndex>100</zIndex>
+</image>
+
+<image name="sysbg2" extra="true">
+	<color>ffffff</color>
+	<path>./_art/sysbg2.png</path>
+	<size>1 1</size>
+	<pos>0 0</pos>
+	<zIndex>80</zIndex>
+</image>
+
+
+<helpsystem name="help">
+	<pos>0.02 0.943</pos>
+    <textColor>212121</textColor>
+    <iconColor>212121</iconColor>
+    <fontPath>./_art/menu.ttf</fontPath>
+    <fontSize>0.02</fontSize>
+</helpsystem>
+
+</view>
+
+<view name="basic,detailed, video">
+
+<image name="sysbg0" extra="true">
+	<color>ffffff</color>
+	<path>./_art/white.png</path>
+	<size>1 1</size>
+	<pos>0 0</pos>
+	<color>000000</color>
+	<zIndex>1</zIndex>
+</image>
+
+<image name="sysbg1" extra="true">
+	<color>ffffff</color>
+	<path>./_art/sysbg3.png</path>
+	<size>1 1</size>
+	<pos>0 0</pos>
+	<zIndex>100</zIndex>
+</image>
+
+<image name="sysbg2" extra="true">
+	<color>ffffff</color>
+	<path>./_art/sysbg4.png</path>
+	<size>1 1</size>
+	<pos>0 0</pos>
+	<zIndex>80</zIndex>
+</image>
+
+<textlist name="gamelist">
+	<selectorColor>FFFFFF</selectorColor>
+	<selectorImagePath>./_art/menuicon.png</selectorImagePath>
+	<selectedColor>f7931e</selectedColor>
+	<selectorHeight>.05</selectorHeight>
+	<primaryColor>cccccc</primaryColor>
+	<secondaryColor>f4ee21</secondaryColor>
+	<fontPath>./_art/game.ttf</fontPath>
+	<alignment>left</alignment>
+	<pos>0.039 0.195</pos>
+	<size>0.24 0.544</size>
+	<fontSize>0.03</fontSize>
+	<lineSpacing>1</lineSpacing>
+	<horizontalMargin>0.02</horizontalMargin>
+	<zIndex>90</zIndex>
+</textlist>
+
+<helpsystem name="help">
+	<pos>0.02 0.943</pos>
+    <textColor>212121</textColor>
+    <iconColor>212121</iconColor>
+    <fontPath>./_art/menu.ttf</fontPath>
+    <fontSize>0.022</fontSize>
+</helpsystem>
+
+<text name="md_description">
+	<pos>0.79 0.285</pos>
+	<size>0.15 0.351</size>
+	<color>212121</color>
+	<fontPath>./_art/game.ttf</fontPath>
+	<fontSize>0.03</fontSize>
+	<alignment>left</alignment>
+	<forceUppercase>0</forceUppercase>
+	<lineSpacing>.9</lineSpacing>
+	<zIndex>99</zIndex>
+</text>
+
+<!--
+<image name="quadrado vermelho" extra="true">
+	<color>FF000050</color>
+	<path>./_art/white.png</path>
+	<origin>0.5 0.5</origin>
+	<pos>0.735 0.833</pos>
+	<size>0.246 0.028</size>
+	<zIndex>200</zIndex>
+</image>
+-->
+
+<text name="md_lbl_rating, md_lbl_players, md_lbl_genre, md_lbl_releasedate, md_lbl_playcount, md_lbl_lastplayed, md_lbl_developer, md_lbl_publisher">
+	<color>232323</color>
+	<forceUppercase>1</forceUppercase>
+	<fontPath>./_art/game.ttf</fontPath>
+	<fontSize>0.03</fontSize>
+	<size>0.22 0.01</size>
+</text>
+
+<text name="md_developer, md_publisher, md_genre, md_playcount, md_players, md_rating">
+	<color>232323</color>
+	<forceUppercase>1</forceUppercase>
+	<fontPath>./_art/game.ttf</fontPath>
+	<fontSize>0.03</fontSize>
+	<size>0.18 0.02</size>
+</text>
+	
+<datetime name="md_releasedate, md_lastplayed">
+	<color>232323</color>
+	<forceUppercase>1</forceUppercase>
+	<fontPath>./_art/game.ttf</fontPath>
+	<fontSize>0.020</fontSize>
+	<size>0.23 0.02</size>
+</datetime>
+
+<text name="md_lbl_rating">
+	<color>232323</color>
+	<fontSize>0.033</fontSize>
+	<pos>0.736 0.84</pos>
+</text>
+
+	<rating name="md_rating">
+	<color>FFFFFFFF</color>
+	<pos>0.705 0.875</pos>
+	<size>0.272 0.085</size>
+	<filledPath>./_art/full.png</filledPath>
+	<unfilledPath>./_art/empty.png</unfilledPath>
+	</rating>
+
+<text name="md_lbl_playcount">
+	<pos>0.455 0.74</pos>
+</text>
+
+	<text name="md_playcount">
+	<pos>0.58 0.735</pos>
+	</text>	
+	
+<text name="md_lbl_players">
+	<pos>0.46 .17</pos>
+</text>
+
+	<text name="md_players">
+	<pos>0.54 0.165</pos>
+	</text>
+
+<text name="md_lbl_genre">
+	<color>23232300</color>
+	<pos>0.46 2.13</pos>
+</text>
+
+	<text name="md_genre">
+	<fontSize>0.026</fontSize>	
+	<pos>0.45 0.13</pos>
+	</text>
+
+<text name="md_lbl_developer">
+	<fontSize>0.026</fontSize>
+	<pos>0.43 0.678</pos>
+</text>
+	
+	<text name="md_developer">
+	<fontSize>0.026</fontSize>
+	<pos>0.515 0.675</pos>
+	</text>
+
+<text name="md_lbl_publisher">
+	<fontSize>0.026</fontSize>
+	<pos>0.43 0.71</pos>
+</text>
+	
+	<text name="md_publisher">
+	<fontSize>0.026</fontSize>
+	<pos>0.51 0.705</pos>
+	</text>
+
+<text name="md_lbl_releasedate">
+	<fontSize>0.023</fontSize>
+	<pos>0.732 0.678</pos>
+</text>
+
+	<datetime name="md_releasedate">
+	<fontSize>0.023</fontSize>
+	<pos>0.805 0.675</pos>
+	</datetime>
+	
+<text name="md_lbl_lastplayed">
+	<fontSize>0.023</fontSize>
+	<pos>0.732 0.705</pos>
+</text>
+
+<datetime name="md_lastplayed">
+	<fontSize>0.027</fontSize>
+	<pos>0.78 0.725</pos>
+</datetime>
+
+</view>
+
+<view name="detailed">
+
+<image name="md_image">
+	<origin>.5 .5</origin>
+		<pos>0.6 0.444</pos>
+	<maxSize>0.37 0.44</maxSize>
+	<zIndex>97</zIndex>
+</image>
+
+</view>
+
+<feature supported="video">
+
+<view name="video">
+
+<video name="md_video">
+	<origin>.5 .5</origin>
+	<pos>0.606 0.44</pos>
+	<maxSize>0.354 0.455</maxSize>
+	<delay>0.3</delay>
+	<showSnapshotNoVideo>true</showSnapshotNoVideo>
+	<showSnapshotDelay>false</showSnapshotDelay>
+	<zIndex>98</zIndex>
+</video>
+
+<image name="md_marquee">
+	<origin>0.5 0.5</origin>
+	<pos>0.865 0.198</pos>
+	<maxSize>0.16 0.11</maxSize>
+	<zIndex>99</zIndex>
+</image>
+
+</view>
+
+</feature>
+
+</theme>
